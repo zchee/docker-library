@@ -1,0 +1,4 @@
+---
+- from: http://production.cf.rubygems.org
+  to: /mirror/rubygems.org
+  parallelism: 1
