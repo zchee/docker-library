@@ -1,0 +1,7 @@
+FROM ubuntu:trusty
+MAINTAINER zchee <zchee.io@gmail.com>
+
+RUN apt-get update && apt-get install httrack httrack-doc webhttrack -y --no-install-recommends
+
+# ENTRYPOINT ["httrack", "--continue"]
+ENTRYPOINT ["httrack", "--update"]
